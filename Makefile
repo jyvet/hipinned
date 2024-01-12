@@ -1,5 +1,5 @@
 libhipinned.so:
-	hipcc -O3 -D__HIP_PLATFORM_AMD__ -fpic -shared intercept.c -ldl -o libhipinned.so
+	hipcc -O3 -D__HIP_PLATFORM_AMD__ -fpic -shared hipinned.c -ldl -o libhipinned.so
 
 all: libhipinned.so
 
